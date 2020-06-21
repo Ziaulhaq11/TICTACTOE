@@ -11,8 +11,8 @@ option = ['O','X']
 
 def check():
 	for i in option:
-		#player 1
-		#horizontally
+			#player 1
+			#horizontally
 			if board['T1'] == i and board['T2'] == i and board['T3'] == i:
 				return 1
 			if board['M1'] == i and board['M2'] == i and board['M3'] == i:
@@ -29,7 +29,7 @@ def check():
 				return 1
 			if board['T3'] == i and board['M3'] == i and board['T3'] == i:
 				return 1
-	return 0
+			return 0
 
 while True:
 	print(board['T1'] + '  |  ' + board['T2'] + '  |  ' + board['T3'])
